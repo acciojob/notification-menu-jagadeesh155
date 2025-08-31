@@ -1,16 +1,128 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>GenZ Notifications</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    /* Header */
+    header {
+      background-color: #6b21a8;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .tabs a {
+      background-color: #5b21b6;
+      color: white;
+      text-decoration: underline;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .refresh-btn {
+      background-color: #2563eb;
+      border: 2px solid #fff;
+      border-radius: 6px;
+      padding: 8px 16px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Notifications section */
+    .content {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .notification-list {
+      border: 1px solid #e5e7eb;
+      background-color: #f0f9ff;
+    }
+
+    .notification {
+      padding: 12px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .notification:last-child {
+      border-bottom: none;
+    }
+
+    .notification p {
+      margin: 0;
+    }
+
+    .user {
+      font-weight: bold;
+    }
+
+    .time {
+      display: block;
+      font-style: italic;
+      color: #555;
+      margin-top: 2px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <header>
+    <div>
+      <h1>GenZ</h1>
+      <div class="tabs">
+        <a href="#">Posts</a>
+        <a href="#">Users</a>
+        <a href="#">Notifications</a>
+      </div>
+    </div>
+    <button class="refresh-btn">Refresh Notifications</button>
+  </header>
 
+  <div class="content">
+    <h2>Notifications</h2>
+    <div class="notification-list">
+      <div class="notification">
+        <p><span class="user">Uriah Pagac</span> says hi!</p>
+        <span class="time">less than a minute ago</span>
+      </div>
+      <div class="notification">
+        <p><span class="user">Magnus Gislason</span> is glad we're friends</p>
+        <span class="time">1 minute ago</span>
+      </div>
+      <div class="notification">
+        <p><span class="user">Magnus Gislason</span> sent you a gift</p>
+        <span class="time">10 minutes ago</span>
+      </div>
+      <div class="notification">
+        <p><span class="user">Lauren Bednar</span> is glad we're friends</p>
+        <span class="time">10 minutes ago</span>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
